@@ -1,0 +1,58 @@
+/* TOAST */
+.toast {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+}
+.toast-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover de inputs y textarea */
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 8px rgba(45, 212, 191, 0.6);
+  border-color: #2dd4bf; /* teal */
+}
+
+/* Galería hover */
+.galeria-item img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.galeria-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.25);
+}
+
+/* Botón */
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(45, 212, 191, 0.5);
+}
+
+/* Card hover general */
+section:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+/* Detalle de texto con sombra */
+h1, h2 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Footer glow */
+footer button.glow {
+  box-shadow: 0 0 8px #2dd4bf, 0 0 16px #2dd4bf;
+}
+footer button.glow:hover {
+  box-shadow: 0 0 12px #2dd4bf, 0 0 24px #2dd4bf;
+}
+
+

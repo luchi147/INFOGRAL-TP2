@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias | Artista Mapping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-100 font-sans">
+
+  <!-- HEADER -->
+   <header class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-md shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-teal-400 tracking-wide">Artista Mapping</a>
+
+      <ul class="hidden md:flex gap-8 text-sm sm:text-base">
+        <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+
+        <!-- Proyectos con dropdown -->
+        <li class="relative group">
+          <a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a>
+          <ul class="absolute left-1/2 -translate-x-1/2 mt-2 w-44 bg-neutral-800 rounded-lg opacity-0 group-hover:opacity-100 transition duration-200 shadow-lg">
+            <li><a href="proyecto1.html" class="block py-2 px-4 hover:bg-neutral-700 transition">PERTURBACIONES</a></li>
+            <li><a href="proyecto2.html" class="block py-2 px-4 hover:bg-neutral-700 transition">BUSCAVISTAS</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+        <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+        <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+        <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+      </ul>
+
+      <!-- Hamburger móvil -->
+      <button id="menuBtn" class="md:hidden text-teal-400 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 text-center bg-neutral-900 py-4">
+      <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+      <li><a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a></li>
+      <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+      <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+      <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+      <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+    </ul>
+  </header>
+
+  <!-- MAIN -->
+  <main class="px-6 py-10 space-y-16"></main>
+
+    <h1 class="text-3xl font-bold text-center mb-8">Estudio</h1>
+
+    <!-- NOTICIA 1 -->
+    <article class="flex flex-col md:flex-row gap-6 items-start">
+      <img src="img/estudio01.jpg" alt="Noticia 1" class="w-full md:w-1/3 rounded-lg shadow-lg">
+      
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-bold mb-2">VIDEONIX</h2>
+        <p class="text-gray-300 text-sm mb-2">Estudio-Laboratorio, barrio de Monte Castro (CABA)</p>
+        <p class="text-gray-400 mb-3">
+          
+El estudio Videonix surge como una necesidad de contar con un espacio idóneo para generar material visual experimental, con el fin de que pueda ser utilizado en obras, video en vivo, y producciones audiovisuales de todo tipo (videoclips, cine, difusión, etc).
+        
+      </div>
+    </article>
+
+    <hr class="border-gray-700">
+
+    <!-- NOTICIA 2 -->
+    <article class="flex flex-col md:flex-row gap-6 items-start">
+      <img src="img/estudio12.jpg" alt="Noticia 2" class="w-full md:w-1/3 rounded-lg shadow-lg">
+      
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-bold mb-2">TALLER DE VIDEO ANALÓGICO</h2>
+        <p class="text-gray-300 text-sm mb-2">videonix.plano@gmail.com</p>
+        <p class="text-gray-400 mb-3">
+          Posee equipamiento analógico y digital muy variado, como son mixers, procesadores, cámaras, generadores de señal, sintetizadores de video, máquinas de glitch, computadoras, monitores CRT, analizadores de señal, reproductores analógicos y digitales, y largo etc.
+        
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+ <footer class="bg-neutral-900 text-center py-6 text-gray-400 text-sm relative">
+  <p class="mb-2">© 2025 - Sitio web desarrollado por Luciano Escobar</p>
+
+  <!-- Botón Desarrollador -->
+  <a href="desarrollador.html">
+    <button id="developerBtn" class="bg-gray-800 text-teal-400 px-6 py-2 rounded hover:bg-gray-700 hover:text-teal-300 transition font-bold tracking-wide shadow-md glow">
+      Desarrollador
+    </button>
+  </a>
+</footer>
+
+<script src="formulario.js"></script>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

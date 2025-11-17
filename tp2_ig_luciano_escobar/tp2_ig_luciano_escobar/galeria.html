@@ -1,0 +1,114 @@
+<!-- galeria.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería | kronika_ar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans">
+
+  <!-- NAV / HEADER -->
+   <header class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-md shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-teal-400 tracking-wide">Artista Mapping</a>
+
+      <ul class="hidden md:flex gap-8 text-sm sm:text-base">
+        <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+
+        <!-- Proyectos con dropdown -->
+        <li class="relative group">
+          <a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a>
+          <ul class="absolute left-1/2 -translate-x-1/2 mt-2 w-44 bg-neutral-800 rounded-lg opacity-0 group-hover:opacity-100 transition duration-200 shadow-lg">
+            <li><a href="proyecto1.html" class="block py-2 px-4 hover:bg-neutral-700 transition">PERTURBACIONES</a></li>
+            <li><a href="proyecto2.html" class="block py-2 px-4 hover:bg-neutral-700 transition">BUSCAVISTAS</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+        <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+        <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+        <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+      </ul>
+
+      <!-- Hamburger móvil -->
+      <button id="menuBtn" class="md:hidden text-teal-400 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 text-center bg-neutral-900 py-4">
+      <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+      <li><a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a></li>
+      <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+      <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+      <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+      <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+    </ul>
+  </header>
+
+  <!-- GALERÍA -->
+  <main class="px-6 py-10 space-y-16"></main>
+
+    <h1 class="text-2xl font-bold mb-6">Galería</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/10.jpg" alt="Obra 1" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">Explosión:cosmos:frecuencia:ruido / 2015</figcaption>
+      </figure>
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/13.jpg" alt="Obra 2" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">97 / 2015</figcaption>
+      </figure>
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/15.jpg" alt="Obra 3" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">Memoria / 2019</figcaption>
+      </figure>
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/16.jpg" alt="Obra 4" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">Patrones de Prueba / 2019</figcaption>
+      </figure>
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/17.jpg" alt="Obra 5" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">Cromatismo / 2016</figcaption>
+      </figure>
+
+      <figure class="overflow-hidden rounded-lg bg-neutral-800">
+        <img src="img/19.jpg" alt="Obra 6" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-lg">
+        <figcaption class="p-3 text-sm text-gray-300">Cromatismo / 2016</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+ <footer class="bg-neutral-900 text-center py-6 text-gray-400 text-sm relative">
+  <p class="mb-2">© 2025 - Sitio web desarrollado por Luciano Escobar</p>
+
+  <!-- Botón Desarrollador -->
+  <a href="desarrollador.html">
+    <button id="developerBtn" class="bg-gray-800 text-teal-400 px-6 py-2 rounded hover:bg-gray-700 hover:text-teal-300 transition font-bold tracking-wide shadow-md glow">
+      Desarrollador
+    </button>
+  </a>
+</footer>
+
+<script src="formulario.js"></script>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>
+

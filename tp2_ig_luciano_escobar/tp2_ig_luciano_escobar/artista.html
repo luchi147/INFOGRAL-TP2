@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artista</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-black text-gray-200 font-sans">
+
+  
+  <header class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-md shadow-md">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-teal-400 tracking-wide">Artista Mapping</a>
+
+      <ul class="hidden md:flex gap-8 text-sm sm:text-base">
+        <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+
+        <!-- Proyectos con dropdown -->
+        <li class="relative group">
+          <a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a>
+          <ul class="absolute left-1/2 -translate-x-1/2 mt-2 w-44 bg-neutral-800 rounded-lg opacity-0 group-hover:opacity-100 transition duration-200 shadow-lg">
+            <li><a href="proyecto1.html" class="block py-2 px-4 hover:bg-neutral-700 transition">PERTURBACIONES</a></li>
+            <li><a href="proyecto2.html" class="block py-2 px-4 hover:bg-neutral-700 transition">BUSCAVISTAS</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+        <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+        <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+        <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+      </ul>
+
+      <!-- Hamburger móvil -->
+      <button id="menuBtn" class="md:hidden text-teal-400 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 text-center bg-neutral-900 py-4">
+      <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+      <li><a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a></li>
+      <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+      <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+      <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+      <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+    </ul>
+  </header>
+
+  <!-- MAIN -->
+  <main class="px-6 py-10 space-y-16"></main>
+
+    <h1 class="text-4xl font-bold text-center text-teal-300 drop-shadow-lg">
+      JAVIER PLANO
+    </h1>
+
+    <!-- BIO -->
+    <section class="bg-neutral-900 rounded-xl p-8 shadow-xl border border-neutral-700">
+      <h2 class="text-2xl font-semibold mb-4 text-teal-300">Biografía</h2>
+      <p class="leading-relaxed text-gray-300">
+         
+
+Javier Plano nació en Buenos Aires (Argentina), en 1979. Es Licenciado en Artes Electrónicas de la Universidad Nacional de Tres de Febrero. También cursó algunos años de Ingeniería en Informática. Ha realizado talleres de creación audiovisual con Hernán Khourián y Gustavo Galuppo, entre otros. Participó del programa beca “Interactivos” de la Fundación Telefónica.
+
+ 
+
+En 2007 comienza a producir trabajos en video e instalaciones, con los que participa en diversos festivales y muestras organizadas por instituciones del ámbito local y el exterior. Fue Asistente de dirección y encargado de la coordinación técnica de la primera Bienal de la Imagen en Movimiento, el Productor a cargo de la coordinación técnica en las ediciones de 2014 y 2016.
+      </p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="bg-neutral-900 rounded-xl p-8 shadow-xl border border-neutral-700">
+      <h2 class="text-2xl font-semibold mb-6 text-teal-300">Galería</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="galeria-item rounded-lg overflow-hidden shadow-md border border-neutral-700">
+          <img src="img/cara.png" alt="Obra 1" class="w-full h-full object-cover">
+        </div>
+
+        <div class="galeria-item rounded-lg overflow-hidden shadow-md border border-neutral-700">
+          <img src="img/cara1.png" alt="Obra 2" class="w-full h-full object-cover">
+        </div>
+
+        <div class="galeria-item rounded-lg overflow-hidden shadow-md border border-neutral-700">
+          <img src="img/cara2.png" alt="Obra 3" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+<footer class="bg-neutral-900 text-center py-6 text-gray-400 text-sm relative">
+  <p class="mb-2">© 2025 - Sitio web desarrollado por Luciano Escobar</p>
+
+  <!-- Botón Desarrollador -->
+  <a href="desarrollador.html">
+    <button id="developerBtn" class="bg-gray-800 text-teal-400 px-6 py-2 rounded hover:bg-gray-700 hover:text-teal-300 transition font-bold tracking-wide shadow-md glow">
+      Desarrollador
+    </button>
+  </a>
+</footer>
+
+<script src="formulario.js"></script>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Artista Mapping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans">
+
+  <!-- HEADER -->
+  <header class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-md shadow-md">
+  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+    <a href="index.html" class="text-2xl font-bold text-teal-400 tracking-wide">Artista Mapping</a>
+
+    <ul class="hidden md:flex gap-8 text-sm sm:text-base">
+      <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+
+      <li class="relative group">
+        <a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a>
+        <ul class="absolute left-1/2 -translate-x-1/2 mt-2 w-44 bg-neutral-800 rounded-lg opacity-0 group-hover:opacity-100 transition duration-200 shadow-lg">
+          <li><a href="proyecto1.html" class="block py-2 px-4 hover:bg-neutral-700 transition">PERTURBACIONES</a></li>
+          <li><a href="proyecto2.html" class="block py-2 px-4 hover:bg-neutral-700 transition">BUSCAVISTAS</a></li>
+        </ul>
+      </li>
+
+      <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+      <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+      <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+      <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+    </ul>
+
+    <button id="menuBtn" class="md:hidden text-teal-400 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 text-center bg-neutral-900 py-4">
+    <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+    <li><a href="proyecto.html" class="hover:text-teal-400 transition">Proyectos</a></li>
+    <li><a href="galeria.html" class="hover:text-teal-400 transition">Galería</a></li>
+    <li><a href="estudio.html" class="hover:text-teal-400 transition">Estudio</a></li>
+    <li><a href="artista.html" class="hover:text-teal-400 transition">Artistas</a></li>
+    <li><a href="contacto.html" class="hover:text-teal-400 transition">Contacto</a></li>
+  </ul>
+</header>
+
+  <main class="pt-28 space-y-20 px-6 container mx-auto">
+
+    <!-- SECCIÓN 2: Grid de imágenes con texto -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="flex flex-col gap-4">
+        <img src="img/4.png" alt="Obra 1" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+        <img src="img/7.png" alt="Obra 2" class="rounded-lg shadow-lg hover:scale-105 transition-transform">
+      </div>
+
+      <div class="text-left flex flex-col justify-center">
+        <h2 class="text-4xl font-extrabold mb-4 text-teal-400">JAVIER PLANO</h2>
+        <p class="text-gray-300 mb-4"> Artista visual especializado en video experimental y visuales en vivo.</p>
+        <p class="italic text-gray-400 border-l-4 border-teal-400 pl-4">"Exploro la memoria y el espacio a través de la imagen en movimiento"</p>
+      </div>
+
+      <div>
+        <img src="img/6.png" alt="Imagen destacada" class="rounded-lg shadow-lg w-full hover:scale-105 transition-transform">
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 py-10">
+  <!-- Imagen 1 -->
+  <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-1">
+    <img src="img/11.jpg" alt="Emisión / Difusión" class="w-full object-cover">
+    <p class="text-gray-400 text-center mt-2">Emisión / Difusión</p>
+  </div>
+
+  <!-- Imagen 2 -->
+  <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:-rotate-1">
+    <img src="img/18.jpg" alt="Cromatismo" class="w-full object-cover">
+    <p class="text-gray-400 text-center mt-2">Cromatismo</p>
+  </div>
+
+  <!-- Imagen 3 -->
+  <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:rotate-2">
+    <img src="img/22.jpg" alt="Cromatismo 2" class="w-full object-cover">
+    <p class="text-gray-400 text-center mt-2">Cromatismo 2</p>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral-900 text-center py-6 text-gray-400 text-sm relative">
+    <p class="mb-2">© 2025 - Sitio web desarrollado por Luciano Escobar</p>
+    <a href="desarrollador.html">
+      <button class="bg-gray-800 text-teal-400 px-6 py-2 rounded hover:bg-gray-700 hover:text-teal-300 transition font-bold tracking-wide shadow-md">
+        Desarrollador
+      </button>
+    </a>
+  </footer>
+  
+  <script src="formulario.js"></script>
+  <script>
+    // Toggle menú móvil
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
